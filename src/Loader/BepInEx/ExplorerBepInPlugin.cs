@@ -4,6 +4,9 @@ using BepInEx.Logging;
 using HarmonyLib;
 using UnityExplorer.Config;
 using UnityExplorer.Loader.BIE;
+#if CPP6
+using BepInEx.Unity.IL2CPP;
+#endif
 #if CPP
 using BepInEx.IL2CPP;
 #endif
@@ -11,6 +14,7 @@ using BepInEx.IL2CPP;
 namespace UnityExplorer
 {
     [BepInPlugin(ExplorerCore.GUID, "UnityExplorer", ExplorerCore.VERSION)]
+    [BepInDependency("gg.reactor.api", BepInDependency.DependencyFlags.SoftDependency)]
 
     public class ExplorerBepInPlugin :
 #if MONO
