@@ -14,6 +14,22 @@ using BepInEx.IL2CPP;
 namespace UnityExplorer
 {
     [BepInPlugin(ExplorerCore.GUID, "UnityExplorer", ExplorerCore.VERSION)]
+
+    /// So you may be wondering
+    /// why I took so long to publicly release this
+    /// well 1 i forgot
+    /// and 2 i hated my original methodology - and never intended to release it publicly.
+    /// 
+    /// so after stealing some code
+    /// and using some of my own
+    /// i'm confident that chris won't freak out.
+    /// 
+    /// The bepindependency below is so the chainloader makes sure unityexplorer enables last.
+    /// Why? because it was the quickest and easiest way to fix a problem to an acceptable public standard.
+    /// Rather than do hacky fixes
+    /// 
+    /// - MyDragonBreath
+
     [BepInDependency("gg.reactor.api", BepInDependency.DependencyFlags.SoftDependency)]
 
     public class ExplorerBepInPlugin :
