@@ -28,6 +28,15 @@ namespace UnityExplorer
     /// Why? because it was the quickest and easiest way to fix a problem to an acceptable public standard.
     /// Rather than do hacky fixes
     /// 
+    /// 
+    /// 
+    /// note i built reactor myself and commented out the below line and it worked.
+    /// i have no idea why.
+    /// AND THE OFFICIAL RELEASE AND ACTIONS WORKFLOW JUST DOESNT WORK
+    /// LIKE
+    /// BROOOOOOOOOOOOOOOOO
+    /// WHYYY
+    /// 
     /// - MyDragonBreath
 
     [BepInDependency("gg.reactor.api", BepInDependency.DependencyFlags.SoftDependency)]
