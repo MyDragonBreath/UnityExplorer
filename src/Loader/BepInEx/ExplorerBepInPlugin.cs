@@ -15,6 +15,7 @@ namespace UnityExplorer
 {
     [BepInPlugin(ExplorerCore.GUID, "UnityExplorer", ExplorerCore.VERSION)]
 
+    #region MDB-Comment
     /// So you may be wondering
     /// why I took so long to publicly release this
     /// well 1 i forgot
@@ -28,17 +29,13 @@ namespace UnityExplorer
     /// Why? because it was the quickest and easiest way to fix a problem to an acceptable public standard.
     /// Rather than do hacky fixes
     /// 
-    /// 
+    /// - MyDragonBreath
     /// 
     /// note i built reactor myself and commented out the below line and it worked.
-    /// i have no idea why.
-    /// AND THE OFFICIAL RELEASE AND ACTIONS WORKFLOW JUST DOESNT WORK
-    /// LIKE
-    /// BROOOOOOOOOOOOOOOOO
-    /// WHYYY
+    /// I found out why. Debug builds dont cause a memory error, but release builds do.
     /// 
     /// - MyDragonBreath
-
+    #endregion
     [BepInDependency("gg.reactor.api", BepInDependency.DependencyFlags.SoftDependency)]
 
     public class ExplorerBepInPlugin :
